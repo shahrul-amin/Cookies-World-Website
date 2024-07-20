@@ -1,0 +1,357 @@
+/* Product Styles */
+.listProduct {
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.image-container img {
+    max-width: 80%;
+    max-height: 80%;
+    filter: drop-shadow(0 10px 5px #0009);
+}
+
+.listProduct .item {
+    background-color: #eeeee6d7;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.listProduct .item h2 {
+    font-weight: 550;
+    font-size: larger;
+}
+
+.listProduct .item .price {
+    letter-spacing: 5px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: rgb(54, 46, 46);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 17.5px;
+    border-radius: 25px;
+}
+
+/* Shopping Cart Styles */
+.listCart .item img {
+    width: 50px;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 12.5px;
+    align-items: center;
+    text-align: center;
+}
+
+.listCart .item .quantity {
+    display: flex;
+}
+
+.listCart .item .quantity span {
+    width: 25px;
+    height: 25px;
+    background-color: #eeeee6;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .item .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #fff;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+/* Detail Styles */
+.detail {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: left;
+}
+
+.detail .image img {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.detail .image {
+    position: relative;
+}
+
+.detail .image::before {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: " ";
+    background-color: #94817733;
+    z-index: -1;
+    border-radius: 185px 100px 165px 120px;
+    left: calc(50% - 150px);
+    top: 50px;
+}
+
+.detail .name {
+    font-size: 45px;
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.detail .price {
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 7px;
+    margin-bottom: 25px;
+}
+
+.detail .buttons button {
+    background-color: #eee;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.detail svg {
+    width: 25px;
+}
+
+.detail .buttons button:nth-child(2) {
+    background-color: #2F2F2F;
+    color: #eee;
+    display: inline-flex;
+    gap: 12px;
+    box-shadow: 0 10px 20px #2F2F2F77;
+}
+
+.detail .buttons svg {
+    transform: translateY(-2.5px);
+}
+
+.detail .description {
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+/* Content Container */
+.content-container {
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Styles */
+.review {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.review .reviewcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.review .title {
+    margin: 20px 0;
+    padding-left: 10px;
+    border-left: 8px solid rgb(66, 15, 114);
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(66, 15, 114);
+}
+
+.review .title b {
+    background-color: rgb(205, 188, 221);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.review p {
+    background-color: rgb(235, 213, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.review .commentSection,
+.review .latestReviews {
+    background: linear-gradient(45deg, rgb(66, 15, 114), rgb(175, 31, 108));
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review .latestReviews:empty {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.input-box {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    border: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box input:valid,
+.input-box textarea:valid {
+    border-color: rgb(66, 15, 114);
+    background-color: rgba(205, 188, 221, 0.2);
+}
+
+.input-box textarea {
+    resize: none;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.button {
+    margin-top: 12px;
+}
+
+.button input,
+#displayList {
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: rgb(66, 15, 114);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#displayList {
+    margin-top: 15px;
+    margin-left: 23px;
+    
+}
+
+.button input[type="submit"]:hover {
+    background: rgb(66, 15, 114);
+}
+
+/* Restaurant Photo Styles */
+.restaurant-photo {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.restaurant-photo img {
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-photo .info-text {
+    padding-left: 15px;
+}
+
+.restaurant-photo .info-text h3 {
+    font-size: 24;
+    color: rgb(66, 15, 114);
+    margin: 10px 10px;
+}
+
+.restaurant-photo .info-text h3 a {
+    color: rgb(175, 31, 108);
+    text-decoration: none;
+}
+
+.restaurant-photo .info-text h3 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Special Request Section */
+.speReq {
+    margin: 0 20%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .detail {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .detail .image img {
+        width: unset;
+        height: 40vh;
+    }
+    
+    .detail .name {
+        font-size: x-large;
+        margin: 0;
+    }
+    
+    .detail .buttons button {
+        font-size: small;
+    }
+}

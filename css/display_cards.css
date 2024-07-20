@@ -1,0 +1,245 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom right, #e6f7ff, #c9f0ff, #a3e4ff, #7fd8ff, #4dc9ff);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex: 1;
+    align-items: center;
+    padding: 20px;
+    background-color: #290a2cab;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+}
+
+.welcome-section {
+    margin-top: 150px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #cccccc;
+}
+
+.editprofile {
+    margin-top: 30px;
+}
+
+.editprofile a {
+    background: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.editprofile a:hover {
+    background: #92329a;
+    color: #ffffff;
+}
+
+.history {
+    margin-top: 30px;
+}
+
+.history a {
+    background: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #290A2C;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.history a:hover {
+    background: #290A2C;
+    color: #ffffff;
+}
+
+.account-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.title-section {
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+#add-card-btn {
+    background-color: #574b90;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#add-card-btn:hover {
+    background: #290A2C;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.saved-card {
+    background-color: #ffffffc6;
+    color: #000000;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.saved-card p {
+    margin: 0;
+}
+
+.saved-card .remove-card-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.saved-card .remove-card-btn button{
+    background-color: #e23434;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.saved-card .remove-card-btn button:hover {
+    background-color: #7a0101;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #290A2C;
+    border-radius: 10px;
+    margin: 20% auto ; /* 15% from the top and centered */
+    padding: 20px;
+    border: 0px solid #000000;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(86, 86, 86, 0.4);;
+}
+
+.modal-content p {
+    font-size: x-large;
+    color: white;
+}
+
+.btnFlex {
+    justify-self: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.btnFlex button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#btnYes {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+#btnYes:hover {
+    background: #ff4d4d;
+}
+
+#btnNo {
+    background: #9a4ea1;
+    color: #ffffff;
+}
+
+#btnNo:hover {
+    background: #b76dbb;
+}
+
+.btn {
+    background-color: #574b90;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #463575;
+}
